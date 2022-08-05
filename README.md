@@ -1,5 +1,13 @@
 # degitlab
 
+> Straightforward project scaffolding for self managed gitlab.
+
+### Usage
+
+```
+degitlab --help
+```
+
 ## Sponsors
 
 <p align="center">
