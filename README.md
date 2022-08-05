@@ -1,6 +1,6 @@
 # degitlab
 
-> Straightforward project scaffolding for self managed gitlab.
+> Straightforward project scaffolding for self-managed gitlab.
 
 ### Usage
 
