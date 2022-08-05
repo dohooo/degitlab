@@ -1,7 +1,7 @@
 {
   "name": "degitlab",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "packageManager": "pnpm@7.2.1",
   "description": "",
   "author": "Dohooo <zhaodonghao586@outlook.com>",
@@ -11,12 +11,12 @@
   "bin": {
     "degitlab": "./dist/index.mjs"
   },
-	"engines": {
-		"node": ">=16",
-		"pnpm": ">=7",
-		"npm": "please-use-pnpm",
-		"yarn": "please-use-pnpm"
-	},
+  "engines": {
+    "node": ">=16",
+    "pnpm": ">=7",
+    "npm": "please-use-pnpm",
+    "yarn": "please-use-pnpm"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dohooo/degitlab.git"
