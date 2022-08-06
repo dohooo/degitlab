@@ -2,7 +2,7 @@ English | [简体中文](./README.zh-CN.md)
 
 # degitlab
 
-> 🫥 The self-managed gitlab version of degit.
+> 🫥 Helps you easily clone project files for self-managed GitLab.
 
 ### Configuration
 
