@@ -10,8 +10,10 @@ Since self-managed git usually come with authentication, so we need to add perso
 *You don't need to set it if you have already logged in locally.*
 ```
 # ~/.gitconfig
-PAT = <personal access token>
-USERNAME = <username of self-managed git>
+
+[core]
+  PAT = <personal access token>
+  USERNAME = <username of self-managed git>
 ```
 
 ### Usage

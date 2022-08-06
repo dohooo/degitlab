@@ -10,8 +10,10 @@
 *如果你已经在本地登录，那你不需要再次配置*
 ```
 # ~/.gitconfig
-PAT = <personal access token>
-USERNAME = <用户名>
+
+[core]
+  PAT = <personal access token>
+  USERNAME = <用户名>
 ```
 
 ### 使用
