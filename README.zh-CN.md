@@ -2,7 +2,7 @@
 
 # degitlab
 
-> 🫥 Degit的gitlab私有托管版本。
+> 🫥 帮助您轻松地为私有化部署的GitLab克隆项目文件.
 
 ### 配置
 
