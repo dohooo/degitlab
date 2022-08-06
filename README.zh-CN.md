@@ -1,20 +1,20 @@
-English | [简体中文](./README.zh-CN.md)
+[English](./README.md) | 简体中文
 
 # degitlab
 
-> 🫥 The self-managed gitlab version of degit.
+> 🫥 Degit的gitlab私有托管版本。
 
-### Configuration
+### 配置
 
-Since self-managed git usually come with authentication, so we need to add personal access token.  
-*You don't need to set it if you have already logged in locally.*
+私有化部署的gitlab通常需要身份验证，所以我们需要配置personal access token。
+*如果你已经在本地登录，那你不需要再次配置*
 ```
 # ~/.gitconfig
 PAT = <personal access token>
-USERNAME = <username of self-managed git>
+USERNAME = <用户名>
 ```
 
-### Usage
+### 使用
 
 ```
 degitlab -u https://gitlab.<xxxx>.com/<group>/<sub-group>/<repo-name>.git

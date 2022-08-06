@@ -1,3 +1,6 @@
 {
-  "extends": "@dohooo"
+  "extends": "@dohooo",
+  "rules": {
+    "no-console":"off"
+  }
 }

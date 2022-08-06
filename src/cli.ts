@@ -20,6 +20,7 @@ export const cli = meow(`
     url: {
       type: 'string',
       alias: 'u',
+      isRequired: true,
     },
     output: {
       type: 'string',
