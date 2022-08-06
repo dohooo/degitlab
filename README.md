@@ -12,16 +12,28 @@ Since self-managed git usually come with authentication, so we need to add perso
 # ~/.gitconfig
 
 [core]
-  PAT = <personal access token>
-  USERNAME = <username of self-managed git>
+  degitlabPAT = <personal access token>
+  degitlabHost = <host>
 ```
 
 ### Usage
 
+
 ```
-degitlab -u https://gitlab.<xxxx>.com/<group>/<sub-group>/<repo-name>.git
-// or
-degitlab --help
+// Use the project ID to clone the project and automatically filter the .git directory.
+degitlab -i 1016
+
+// Specify the path to clone, default is current directory.
+degitlab -i 1016 -o ./dist
+
+// Filter the directory.
+degitlab -i 1016 -o ./dist -s /src/index.ts
+
+// Filter the multiple directories.
+degitlab -i 1016 -o ./dist -s /src/index.ts -s /src/index2.ts
+
+// Help.
+degitlab -h
 ```
 
 ## Sponsors

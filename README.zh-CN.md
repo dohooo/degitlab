@@ -12,24 +12,35 @@
 # ~/.gitconfig
 
 [core]
-  PAT = <personal access token>
-  USERNAME = <用户名>
+  degitlabPAT = <personal access token>
+  degitlabHost = <host>
 ```
 
 ### 使用
 
 ```
-degitlab -u https://gitlab.<xxxx>.com/<group>/<sub-group>/<repo-name>.git
-// or
-degitlab --help
+// 使用项目id克隆全部项目，并自动过滤.git目录。
+degitlab -i 1016
+
+// 指定输出路径，默认为当前目录。
+degitlab -i 1016 -o ./dist
+
+// 指定子目录，进行部分克隆。
+degitlab -i 1016 -o ./dist -s /src/index.ts
+
+// 指定多个子目录。
+degitlab -i 1016 -o ./dist -s /src/index.ts -s /src/index2.ts
+
+// 帮助。
+degitlab -h
 ```
 
-## Sponsors
+## 赞助商
 
 <p align="center">
   <img src='https://github.com/dohooo/sponsors/blob/master/sponsors.png?raw=true'/>
 </p>
 
-## License
+## 许可
 
 [MIT](./LICENSE) License © 2022 [Dohooo](https://github.com/dohooo)
