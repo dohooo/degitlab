@@ -20,17 +20,17 @@ Since self-managed git usually come with authentication, so we need to add perso
 
 
 ```
-// Use the project ID to clone the project and automatically filter the .git directory.
-degitlab -i 1016
+// Use the project name to clone the project and automatically filter the .git directory.
+degitlab -n degitlab
 
 // Specify the path to clone, default is current directory.
-degitlab -i 1016 -o ./dist
+degitlab -n degitlab -o ./dist
 
 // Filter the directory.
-degitlab -i 1016 -o ./dist -s /src/index.ts
+degitlab -n degitlab -o ./dist -f /src/index.ts
 
 // Filter the multiple directories.
-degitlab -i 1016 -o ./dist -s /src/index.ts -s /src/index2.ts
+degitlab -n degitlab -o ./dist -f /src/index.ts -f /src/index2.ts
 
 // Help.
 degitlab -h

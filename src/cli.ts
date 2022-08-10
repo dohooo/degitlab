@@ -5,9 +5,9 @@ export const cli = meow(`
     $ degitlab [options]
 
   Options
-    -i, --id        <project-id>      Project id
+    -n, --name      <project-name>    Project name
     -o, --output    <dir-name>        Directory where to store repo files
-    -s, --subDir    <sub-dir>         Sub directory to download 
+    -f, --filter    <file-name>       Filter files to download 
     --help                            display help for command
     --version                         display version for command
 
@@ -18,18 +18,18 @@ export const cli = meow(`
   autoHelp: true,
   autoVersion: true,
   flags: {
-    id: {
-      type: 'number',
-      alias: 'i',
+    name: {
+      type: 'string',
+      alias: 'n',
       isRequired: true,
     },
     output: {
       type: 'string',
       alias: 'o',
     },
-    subDir: {
+    filter: {
       type: 'string',
-      alias: 's',
+      alias: 'f',
       isMultiple: true,
     },
   },
