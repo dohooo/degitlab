@@ -12,7 +12,7 @@ export const cli = meow(`
     --version                         display version for command
 
   Examples
-    $ degitlab -i 2259 -o dist
+    $ degitlab -n degitlab -o ./
 `, {
   importMeta: import.meta,
   autoHelp: true,
