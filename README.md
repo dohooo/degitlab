@@ -2,7 +2,7 @@ English | [简体中文](./README.zh-CN.md)
 
 # degitlab
 
-> 🫥 Helps you easily clone project files for self-managed GitLab.
+> 🫥 **degitlab** makes copies of gitlab repositories. When you run `degitlab -n some-group/some-repo -o ./`, it will find the latest commit on the remote and download the associated tar file to `./` if it doesn't already exist locally. (This is much quicker than using `git clone`, because you're not downloading the entire git history.)
 
 ### Configuration
 
