@@ -34,12 +34,16 @@ const { removeSync, mkdirSync, existsSync } = pkg
   const api = new Gitlab({ host: origin, token: degitlabPAT })
 
   const projects = await api.Projects.search(name)
+
+  if (!projects.length)
+    throw new Error(`No projects found with name: ${name}`)
+
   const answers = await inquirer
     .prompt([
       {
         type: 'list',
         name: 'path_with_namespace',
-        message: 'Which project do you want to download?',
+        message: '[🫥 digitlab] Which project do you want to download?',
         choices: projects.map(prj => prj.path_with_namespace),
         filter(val) {
           return val.toLowerCase()
