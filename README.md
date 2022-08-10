@@ -1,8 +1,21 @@
-<!-- English | [简体中文](./README.zh-CN.md) -->
+English | [简体中文](./README.zh-CN.md)
 
 # degitlab
 
-> 🫥 **degitlab** makes copies of gitlab repositories. When you run `degitlab -n some-group/some-repo -o ./`, it will find the latest commit on the remote and download the associated tar file to `./` if it doesn't already exist locally. (This is much quicker than using `git clone`, because you're not downloading the entire git history.)
+> 🫥 **degitlab** -> **de-git-lab**  
+> Get repository without the git information for self-managed gitlab, very fast.  
+
+### Why?
+
+In self-managed GitLab, I made some code templates, such as ts-starter, which is a code template based on TS. It contains the development specification configuration of the team and some specific configurations for internal use in the company. In order to share it with other colleagues, I cannot place it in Github. So I put it in self-managed GitLab, and I can do it when I need to run `degitlab -n ts-starter -o ./ts-project`.  
+
+For another example, I created a repository containing various IDE configurations, also based on our team's specifications, and if I use VSCode, I can run `degitlab -n ide -o .vscode -f .vscode`, and if I use XXX, I can run `degitlab -n ide -o XXX -f XXX`.  
+
+This tool has greatly improved project standardization and development efficiency.
+
+### How?
+
+When you run `degitlab -n some-group/some-repo -o ./`, it will find the latest commit on the remote and download the associated tar file to `./` if it doesn't already exist locally. (This is much quicker than using `git clone`, because you're not downloading the entire git history.)
 
 ### Configuration
 
