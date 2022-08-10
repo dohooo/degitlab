@@ -9,9 +9,7 @@ English | [简体中文](./README.zh-CN.md)
 
 In self-managed GitLab, I made some code templates, such as ts-starter, which is a code template based on TS. It contains the development specification configuration of the team and some specific configurations for internal use in the company. In order to share it with other colleagues, I cannot place it in Github. So I put it in self-managed GitLab, and I can do it when I need to run `degitlab -n ts-starter -o ./ts-project`.  
 
-For another example, I created a repository containing various IDE configurations, also based on our team's specifications, and if I use VSCode, I can run `degitlab -n ide -o .vscode -f .vscode`, and if I use XXX, I can run `degitlab -n ide -o XXX -f XXX`.  
-
-This tool has greatly improved project standardization and development efficiency.
+For another example, I created a repository containing various IDE configurations, also based on our team's specifications, and if I use VSCode, I can run `degitlab -n ide -o .vscode -f .vscode`, and If I use another IDE, I can also use `-f` to filter any configuration folder in the project. This tool has greatly improved project standardization and development efficiency.
 
 ### How?
 
