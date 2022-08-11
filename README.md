@@ -3,7 +3,7 @@ English | [简体中文](./README.zh-CN.md)
 # degitlab
 
 > 🫥 **degitlab** -> **de-git-lab**  
-> Get repository without the git information for self-managed gitlab, very fast.  
+> Copy repository without the git information for self-managed gitlab, very fast.  
 
 ### Why?
 
